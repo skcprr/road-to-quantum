@@ -226,23 +226,24 @@ $$
 where $\phi$ is the **phase shift**. 
 
 Common phase shift gates are:
-- $T$ gate, defined with $\psi = \frac{\pi}{4}$:
+
+$T$ gate, defined with $\psi = \frac{\pi}{4}$:
     
-    $$
+$$
     T = \begin{pmatrix}
     1 &0 \\ 
     0& e^{i\frac{\pi}{4}}
     \end{pmatrix}.
-    $$
+$$
 
-- $S$ gate (also called the phase gate), defined with $$\phi = \frac{\pi}{2}:
+  $S$ gate (also called the phase gate), defined with $$\phi = \frac{\pi}{2}:
     
-    $$
+$$
     S = \begin{pmatrix}
     1 &0 \\
     0& e^{i\frac{\pi}{2}}
     \end{pmatrix}.
-    $$
+$$
 
 The Pauli-$Z$ gate is also a special case of a phase shift gate: $Z = P\left(\pi\right)$.
 ***
