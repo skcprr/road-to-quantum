@@ -162,7 +162,8 @@ The identity gate $I$ leaves the qubit's state unchanged. Its matrix form is:
 
 $$
 I = \begin{pmatrix}
-    1 & 0 \\ 0 & 1
+    1 & 0 \\ 
+    0 & 1
 \end{pmatrix},
 $$ 
 
@@ -175,7 +176,8 @@ The Pauli-$X$ gate is the quantum equivalent of the classical **NOT gate**. It f
 
 $$
 X = \begin{pmatrix}
-    0 &1 \\ 1& 0
+    0 &1 \\ 
+    1& 0
 \end{pmatrix}.
 $$
 
@@ -183,7 +185,8 @@ The Pauli-$Y$ gate turns $|0\rangle$ into $i|1\rangle$, and $|1\rangle$ into $-i
 
 $$
 Y = \begin{pmatrix}
-    0 &-i \\ i& 0
+    0 &-i \\ 
+    i& 0
 \end{pmatrix}.
 $$
 
@@ -191,7 +194,8 @@ The Pauli-$Z$ gate turns $|1\rangle$ into $-|1\rangle$ and does nothing to $|0\r
 
 $$
 Z = \begin{pmatrix}
-    1 &0 \\ 0& -1
+    1 &0 \\ 
+    0& -1
 \end{pmatrix}.
 $$
 
@@ -201,7 +205,8 @@ The Hadamard gate is one of the most useful quantum gates. It turns $|0\rangle$ 
 
 $$
 H = \frac{1}{\sqrt{2}}\begin{pmatrix}
-    1 &1 \\ 1& -1
+    1 &1 \\ 
+    1& -1
 \end{pmatrix}.
 $$
 
@@ -213,7 +218,8 @@ Phase shift gates are family of single qubit quantum gates which map the basis s
 
 $$
 P(\phi) = \begin{pmatrix}
-    1 &0 \\ 0& e^{i\phi}
+    1 &0 \\ 
+    0& e^{i\phi}
 \end{pmatrix},
 $$
 
@@ -224,7 +230,8 @@ Common phase shift gates are:
     
     $$
     T = \begin{pmatrix}
-    1 &0 \\ 0& e^{i\frac{\pi}{4}}
+    1 &0 \\ 
+    0& e^{i\frac{\pi}{4}}
     \end{pmatrix} = P\left(\frac{\pi}{4}\right).
     $$
 
@@ -232,7 +239,8 @@ Common phase shift gates are:
     
     $$
     S = \begin{pmatrix}
-    1 &0 \\ 0& e^{i\frac{\pi}{2}}
+    1 &0 \\
+     0& e^{i\frac{\pi}{2}}
     \end{pmatrix} = P\left(\frac{\pi}{2}\right).
     $$
 
