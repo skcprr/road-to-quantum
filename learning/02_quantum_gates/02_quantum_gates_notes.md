@@ -95,15 +95,19 @@ Even though the number of inputs equals the number of outputs, this gate is stil
 A **quantum gate** acts on qubits in the same way that a  classical logic gate acts on bits - it transforms one quantum state into another. 
 
 Let's consider a quantum gate $U$, that acts on a qubit in the state 
+
 $$
 |\psi\rangle = \alpha |0\rangle + \beta|1\rangle ,
 $$  
+
 and transforms it into 
+
 $$
 |\psi'\rangle = \alpha' |0\rangle + \beta'|1\rangle .
 $$
 
 This transformation can be written as:
+
 $$
 U|\psi\rangle = |\psi'\rangle .
 $$
@@ -113,6 +117,7 @@ Quantum gates must be **linear**, which it is a general property of quantum mech
 
 #### Matrix Representation
 Any quantum gate acting on a single qubit can be represented as a $2\times 2$ matrix. For example, the gate $U$ above can be expressed as:
+
 $$
 U = \begin{pmatrix}
     \alpha' & 0 \\
@@ -129,6 +134,7 @@ $$
 The class of matrices that satisfy this constraint are called **unitary matrices**.
 
 A unitary matrix $U$ satisfies:
+
 $$
     U^\dagger U = UU^\dagger = I ,
 $$
@@ -141,6 +147,7 @@ where $U^\dagger$ is the **conjugate transpose** of $U$.
 Since every unitary matrix is invertible, quantum gates are always **reversible**.
 
 The inverse of a quantum gate $U$ is simply its conjugate transpose:
+
 $$
     U^{-1} = U^\dagger .
 $$
@@ -152,6 +159,7 @@ In contrast to  classical single-bit gates, where there exist only two gates: th
 
 ### Identity gate
 The identity gate $I$ leaves the qubit's state unchanged. Its matrix form is:
+
 $$
 I = \begin{pmatrix}
     1 & 0 \\ 0 & 1
@@ -164,6 +172,7 @@ The Pauli gates are the matrices which correspond to a rotation around $x, y$ an
 
 
 The Pauli-$X$ gate is the quantum equivalent of the classical **NOT gate**. It flips $|0\rangle$ to $|1\rangle$ and $|1\rangle$ to $|0\rangle$:
+
 $$
 X = \begin{pmatrix}
     0 &1 \\ 1& 0
@@ -171,6 +180,7 @@ X = \begin{pmatrix}
 $$
 
 The Pauli-$Y$ gate turns $|0\rangle$ into $i|1\rangle$, and $|1\rangle$ into $-i|0\rangle$. This corresponds to a rotation about the $y$-axis on the Bloch sphere:
+
 $$
 Y = \begin{pmatrix}
     0 &-i \\ i& 0
@@ -178,39 +188,48 @@ Y = \begin{pmatrix}
 $$
 
 The Pauli-$Z$ gate turns $|1\rangle$ into $-|1\rangle$ and does nothing to $|0\rangle$. This corresponds to a rotation about the $z$-axis on the Bloch sphere:
+
 $$
 Z = \begin{pmatrix}
     1 &0 \\ 0& -1
 \end{pmatrix}.
 $$
+
 ***
 ### Hadamard gate
 The Hadamard gate is one of the most useful quantum gates. It turns $|0\rangle$ into $\frac{|0\rangle + |1\rangle}{\sqrt{2}}$ and $|1\rangle$ into $\frac{|0\rangle - |1\rangle}{\sqrt{2}}$. So it creates an equal superposition when applied to a computational basis state:
+
 $$
 H = \frac{1}{\sqrt{2}}\begin{pmatrix}
     1 &1 \\ 1& -1
 \end{pmatrix}.
 $$
+
 ***
 
 ### Phase shift gates
 
 Phase shift gates are family of single qubit quantum gates which map the basis states $|0\rangle$ into $|0\rangle$ and $|1\rangle$ into $e^{i\phi}|1\rangle$. The probability of measuring a $|0\rangle$ or $|1\rangle$ does not change after applying this gates, but they modifiy the relative phase of the quantum state. This is equivalent to a rotation about $z$-axis on the Bloch sphere  by $\phi$ radians:
+
 $$
 P(\phi) = \begin{pmatrix}
     1 &0 \\ 0& e^{i\phi}
 \end{pmatrix},
 $$
+
 where $\phi$ is the **phase shift**. 
 
 Common phase shift gates are:
 - $T$ gate, defined with $\psi = \frac{\pi}{4}$:
+    
     $$
     T = \begin{pmatrix}
     1 &0 \\ 0& e^{i\frac{\pi}{4}}
     \end{pmatrix} = P\left(\frac{\pi}{4}\right).
     $$
+
 - $S$ gate (also called the phase gate), defined with $$\phi = \frac{\pi}{2}:
+    
     $$
     S = \begin{pmatrix}
     1 &0 \\ 0& e^{i\frac{\pi}{2}}
