@@ -232,7 +232,7 @@ Common phase shift gates are:
     T = \begin{pmatrix}
     1 &0 \\ 
     0& e^{i\frac{\pi}{4}}
-    \end{pmatrix} = P\left(\frac{\pi}{4}\right).
+    \end{pmatrix}.
     $$
 
 - $S$ gate (also called the phase gate), defined with $$\phi = \frac{\pi}{2}:
@@ -240,8 +240,8 @@ Common phase shift gates are:
     $$
     S = \begin{pmatrix}
     1 &0 \\
-     0& e^{i\frac{\pi}{2}}
-    \end{pmatrix} = P\left(\frac{\pi}{2}\right).
+    0& e^{i\frac{\pi}{2}}
+    \end{pmatrix}.
     $$
 
 The Pauli-$Z$ gate is also a special case of a phase shift gate: $Z = P\left(\pi\right)$.
